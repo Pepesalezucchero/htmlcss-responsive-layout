@@ -14,16 +14,78 @@
 
 /*navigazione*/
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(57, 57, 235);
+nav {
+    position: relative;
     min-height: 60px;
 }
 
+nav .container {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(88, 88, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigazione-destra, .navigazione-sinistra {
+    width: 50%;
+}
+
+.navigazione-destra {
+    display: flex;
+    justify-content: end;
+}
+
 nav img, nav i {
-    padding: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+nav .non-mobile {
+    display: none;
+}
+
+.button {
+    padding: 4px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*header desktop*/
+
+@media all and (min-width: 1199px) {
+
+    .navigazione-destra, .navigazione-sinistra {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .non-desktop {
+        display: none;
+    }
+
+     nav .non-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .non-mobile .get-started-nav {
+        background-color: white;
+        color: black;
+    }
+
+    .non-mobile li {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+
+.non-mobile {
+    display: flex;
+    list-style-type: none;
 }
 
 /*main, sezione prodotto*/
@@ -31,7 +93,7 @@ nav img, nav i {
 .product .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem 2.5rem 3rem;
+    margin: 5rem 2.5rem 3rem;
     /*debug*/
     border: 1px solid black;
     min-height: 1000px;
