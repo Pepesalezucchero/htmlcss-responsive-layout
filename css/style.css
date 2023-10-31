@@ -171,6 +171,68 @@ nav .non-mobile {
     }
 }
 
+/*sezione strategia*/
+
+.strategic {
+    background-color: #9792e4;
+}
+
+.strategic .row {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.strategic .col-bianca {
+    background-color: white;
+    border-radius: 48px;
+    padding-bottom: 50px;
+    
+}
+
+.strategic img {
+    width: 100%;
+}
+
+.strategic h2 {
+    padding: 25px 0;
+    font-size: 35px;
+    color: white;
+}
+
+.strategic h3, .strategic .black {
+    color: black;
+    margin: 15px 10px;
+    text-align: center;
+}
+
+.strategic p {
+    color: white;
+    padding: 15px 0;
+}
+
+.freccia {
+    text-align: center;
+    background-color: #9792e4;
+    padding: 10%;
+    border-radius: 50%;
+    
+}
+
+/*tablet*/
+
+@media all and (min-width: 767px) {
+
+    .strategic .row {
+        margin: 3rem auto 3rem auto;
+        padding: 2rem 0;
+    }
+
+    .strategic h2 {
+        font-size: 40px;
+    }
+}
+
 
 
 
