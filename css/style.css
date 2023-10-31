@@ -10,8 +10,14 @@
     font-size: 16px;
 }
 
-h2 {
-    color: #0084fd
+h3 {
+    color: #0084fd;
+    font-size: 25px;
+    
+}
+
+.product p {
+    color: #5e7385;
 }
 
 /*--------------------mobile first--------------------*/
@@ -104,7 +110,7 @@ nav .non-mobile {
     border-radius: 24px;
 }
 
-.product .col h2, .product .col p, .app-store, .immagine-demo, .dimensione-font {
+.product .col h3, .product .col p, .app-store, .immagine-demo, .dimensione-font {
     text-align: center;
     margin: 2rem 3rem;
 }
@@ -161,5 +167,108 @@ nav .non-mobile {
         width: 40%;
         margin-left: 50%;
         margin-bottom: -66px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+.end-start {
+    background-color: #9792e4;
+}
+
+.end-start .container, .end-end .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.end-start .container {
+    min-height: 500px;
+}
+
+.end-end .container {
+    min-height: 200px;
+}
+
+footer span {
+    color: #e3e1f7;
+}
+
+footer h2 {
+    font-size: 28px;
+    color: white;
+}
+
+footer h1 {
+    color: #fdc15f;
+    font-size: 60px;
+}
+
+footer .button-end {
+    width: 70%;
+    background-color: white;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    color: #9792e4;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+footer p, footer a{
+    color: white;
+}
+
+.end-end a {
+    color: #7c78b5;
+}
+
+footer .ending-font {
+    font-size: 14px;
+}
+
+.end-end {
+    background-color: #333333;
+}
+
+/*footer tablet*/
+
+@media all and (min-width: 481px) {
+
+    .end-start .container, .end-end .container {
+        width: 70%;
+    }
+
+    footer .button-end {
+        width: 50%;
+    }
+
+    footer h2 {
+        font-size: 35px;
+    }
+
+    footer p {
+        padding: 0 20px;
+    }
+}
+
+/*footer desktop*/
+
+@media all and (min-width: 1199px) {
+
+    .end-start .container, .end-end .container {
+        width: 30%;
     }
 }
