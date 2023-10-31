@@ -69,6 +69,7 @@ nav .non-mobile {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        list-style-type: none;
     }
 
     .non-mobile .get-started-nav {
@@ -80,12 +81,6 @@ nav .non-mobile {
         cursor: pointer;
         color: white;
     }
-}
-
-
-.non-mobile {
-    display: flex;
-    list-style-type: none;
 }
 
 /*main, sezione prodotto*/
