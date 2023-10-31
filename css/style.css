@@ -179,6 +179,48 @@ nav .non-mobile {
 
 
 
+
+
+
+
+
+
+
+
+/*sezione about-us*/
+
+
+
+/*desktop*/
+@media all and (min-width: 1199px) {
+
+    .about-us .row {
+        width: 55%;
+        margin: auto;
+        display: flex;
+        
+    }
+
+    .about-us .col-testo {
+        width: 65%;
+    }
+
+    .about-us .col-foto {
+        text-align: center;
+        width: 35%;
+    }
+
+    .about-us img {
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
 /*footer*/
 
 .end-start {
