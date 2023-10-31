@@ -31,6 +31,7 @@ nav {
 
 nav .container {
     position: fixed;
+    z-index: 500;
     width: 100%;
     background-color: #0084fd;
     display: flex;
@@ -189,30 +190,88 @@ nav .non-mobile {
 
 /*sezione about-us*/
 
+.about-us .row {
+    width: 90%;
+    margin: auto;
+}
 
+.about-us .col-foto {
+    margin-top: 10px;
+    text-align: left;
+}
 
+.about-us h2 {
+    font-size: 35px;
+    color: #9792e4;
+}
+
+.about-us p {
+    padding: 2rem 0;
+}
+
+.about-us p {
+    line-height: 200%;
+}
+
+.about-us img {
+    position: relative;
+    width: 40%;
+    border-radius: 50%;
+}
+
+[attribute="posizione"] {
+    position: absolute;
+    z-index: 5;
+}
+
+.about-us h3 {
+    font-size: 22px;
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+
+.button-about-us {
+    background-color: #9792e4;
+    color: white;
+    font-size: 12px;
+}
+
+/*tablet*/
+
+@media all and (min-width: 767px) {
+
+    .about-us .row {
+        width: 90%;
+        margin: auto;
+        display: flex; 
+    }
+
+    .about-us .col-testo {
+        width: 50%;
+        margin-right: 10%;
+    }
+
+    .about-us .col-foto {
+        width: 40%;
+    }
+
+    .about-us img {
+        width: 60%;
+    }
+}
 /*desktop*/
 @media all and (min-width: 1199px) {
 
     .about-us .row {
-        width: 55%;
-        margin: auto;
-        display: flex;
-        
-    }
-
-    .about-us .col-testo {
-        width: 65%;
+        width: 75%; 
     }
 
     .about-us .col-foto {
-        text-align: center;
         width: 35%;
     }
 
     .about-us img {
         width: 50%;
-        border-radius: 50%;
     }
 }
 
@@ -239,6 +298,7 @@ nav .non-mobile {
 
 .end-start .container {
     min-height: 500px;
+    margin-top: 40px;
 }
 
 .end-end .container {
