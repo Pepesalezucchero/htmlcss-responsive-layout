@@ -272,7 +272,92 @@ nav .non-mobile {
 
 
 
+/*sezione benefici*/
 
+.benefits {
+    background-color: #9792e4;
+}
+
+.benefits .container {
+    margin: 0 auto 1rem auto;
+    width: 90%;
+    padding: 2rem 0;
+
+}
+
+.benefits h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.benefits .col {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 30px;
+    border-radius: 24px;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.benefits .container-col {
+    width: 90%;
+    margin: auto;
+}
+
+.container-col h2, .container-col h4 {
+    color: #9792e4;
+}
+
+.container-col h4 {
+    font-size: 18px;
+}
+
+.container-col p {
+    color: #5e7385;
+}
+
+.container-col h2, .container-col h4, .container-col p {
+    text-align: start;
+    margin: 15px 0;
+}
+
+.benefits .button-benefits {
+    background-color: #9792e4;
+    color: white;
+    letter-spacing: 2px;
+    padding: 4px 20px;
+}
+
+/*tablet*/
+
+@media all and (min-width: 767px) {
+
+    .benefits .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefits .col {
+        width: 48%;
+    }
+}
+
+/*desktop*/
+
+@media all and (min-width: 1199px) {
+
+    .benefits .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .benefits .col {
+        width: calc((100% / 3) - 2% );
+    }
+}
 
 
 
